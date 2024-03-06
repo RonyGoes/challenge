@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Privacy</title>
+</head>
+
+<body>
+    <header></header>
+    <main class="design">
+        <section>
+            <div class="text"><h1> <strong>Text Privacy</strong>. A ferramenta para <strong>criptografar e descriptografar</strong>
+                mensagens de texto</h1></div>
+            <p>Segurança e privacidade para suas comunicações online. Digite sua mensagem e proteja suas informações em
+                segundos. Também oferecemos a opção de descriptografar mensagens. Experimente agora e eleve a segurança
+                das suas conversas!</p>
+            <div class="container">
+                <label for="inputText">Texto:</label>
+                <textarea id="inputText" placeholder="Digite o texto"></textarea>
+
+                <label for="cryptType">Operação:</label>
+                <select id="cryptType">
+                    <option value="encrypt">Criptografar</option>
+                    <option value="decrypt">Descriptografar</option>
+                </select>
+
+                <button class="custom-button" onclick="processText()">Processar</button>
+
+                <label for="outputText">Resultado:</label>
+                <textarea id="outputText" readonly></textarea>
+
+                <button class="custom-button" onclick="copyToClipboard()">Copiar</button>
+            </div>
+
+            <div class="void">
+                <img src="backimg.png" alt="image background">
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
